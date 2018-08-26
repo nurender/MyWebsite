@@ -1,0 +1,24 @@
+.nav-item :hover{
+    background-color: red;
+    /* margin: 0px 10px 0px 10px; */
+ }
+ .nav-item  :visited {
+    background-color: green;
+}
+.nav-item  :active {
+    background-color: gold;
+}
+.nav-item{
+  margin: 0px 1px 0px 1px;
+}
+ /* .navbar-expand-sm{
+     padding: 0px;
+ } */
+  .row{
+    margin-top: 56px;
+    margin-right: 0px;
+  }
+  #component{
+    display: none;
+  }
+

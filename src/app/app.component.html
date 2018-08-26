@@ -1,20 +1,69 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-dark sticky-top"> -->
+<div  style="height:1500px">
+  <div>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-dark navbar-dark" style="background-color: #e3f2fd; float: left;">
+      <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfunc()" (click) = "blockdis()" routerLink="text">HOME</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">HTML</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="" >CSS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">JAVASCRIPT</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">BOOTSTRAP</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">JQUERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">ANGULAR</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: rgb(247, 0, 255);" data-toggle="pill" (click) = "myfun()" (click)="opentext()" routerLink="">JAVA</a>
+        </li>
+      </ul>
+    </div> 
+    </nav> 
+  </div>
+  <div id="test">
+    <app-test></app-test>
+  </div>
+  <!-- <div class="row">  
+    <div class="col-sm-4" id="leftbar">
+    kj    <app-sidebar></app-sidebar>
+    </div>  
+    <div class="col-sm-8" id="rightbar">
+      jdsbcjkdsbbvjfvmnfkjdvnidfnvindfijvnfdinvin
+      <app-html></app-html>
+      <div id="bottombar"></div>
+    </div>    
+    <app-test></app-test>
+  </div>  -->
+  
+  <div class="row" id="component">
+      <div class="col-sm-2" style="background-color:lavender; ">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="col-sm-10" style="background-color:lavenderblush;margin-left: 200px;">
+        <router-outlet></router-outlet>
+        <div>
+          <app-footer></app-footer>
+        </div>
+      </div>
+  </div>
+ 
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  
+
 
