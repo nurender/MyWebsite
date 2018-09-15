@@ -19,15 +19,15 @@
     <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
     <input type="text" id="myInput" (keyup)="myFunction()" placeholder="Search for names.." title="Type in a name">
     <ul id="myUL">
-        <li><a href="#item-1">Adele</a></li>
-        <li><a href="#item-1-1">Agnes</a></li>
+        <li><a (click) ="routerLink()">Html Home</a></li>
+        <li><a routerLink="html/Agnes">Agnes</a></li>
       
-        <li><a href="#item-1-2">Billy</a></li>
-        <li><a href="#item-2">Bob</a></li>
+        <li><a routerLink="Billy">Billy</a></li>
+        <li><a routerLink="Bob">Bob</a></li>
       
-        <li><a href="#item-3">Calvin</a></li>
-        <li><a href="#item-3-1">Christina</a></li>
-        <li><a href="#item-3-1">Cindy</a></li>
+        <li><a routerLink="Calvin">Calvin</a></li>
+        <li><a routerLink="Christina">Christina</a></li>
+        <li><a routerLink="Cindy">Cindy</a></li>
       </ul>
   </div> 
   
